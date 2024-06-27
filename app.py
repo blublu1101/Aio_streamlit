@@ -10,6 +10,9 @@ pages = {
     "Data Analysis": [
         st.Page("src/pages/7_🏠_house.py", title="House"),
     ],
+    "AI": [
+        st.Page("src/pages/4_👩‍_AI.py", title="AI"),
+    ],
     "Demo": [
         st.Page("src/pages/api_reference.py", title="api_reference"),
         st.Page("src/pages/1_📈_Plotting_Demo.py", title="Plotting_Demo"),
