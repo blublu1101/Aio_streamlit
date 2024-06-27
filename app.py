@@ -11,7 +11,7 @@ pages = {
         st.Page("src/pages/7_🏠_house.py", title="House"),
     ],
     "AI": [
-        st.Page("src/pages/4_👩‍_AI.py", title="AI"),
+        st.Page("src/pages/4_🖊️‍_AI.py", title="AI Tools"),
     ],
     "Demo": [
         st.Page("src/pages/api_reference.py", title="api_reference"),
