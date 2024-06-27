@@ -1,5 +1,11 @@
 import streamlit as st
 
+HORIZONTAL_RED = "static/images/aio_logo.png"
+
+options = [HORIZONTAL_RED, HORIZONTAL_RED, HORIZONTAL_RED, HORIZONTAL_RED]
+sidebar_logo = st.selectbox("Sidebar logo", options, 0)
+main_body_logo = st.selectbox("Main body logo", options, 1)
+
 pages = {
     "Your account": [
         st.Page("src/pages/home_page.py", title="HomePage"),
@@ -23,5 +29,6 @@ pages = {
     ],
 }
 
+st.logo(sidebar_logo, icon_image=main_body_logo)
 pg = st.navigation(pages)
 pg.run()
