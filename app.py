@@ -3,8 +3,8 @@ import streamlit as st
 HORIZONTAL_RED = "static/images/aio_logo.png"
 
 options = [HORIZONTAL_RED, HORIZONTAL_RED, HORIZONTAL_RED, HORIZONTAL_RED]
-sidebar_logo = st.selectbox("Sidebar logo", options, 0)
-main_body_logo = st.selectbox("Main body logo", options, 1)
+# sidebar_logo = st.selectbox("Sidebar logo", options, 0)
+# main_body_logo = st.selectbox("Main body logo", options, 1)
 
 pages = {
     "Your account": [
@@ -27,8 +27,11 @@ pages = {
         st.Page("src/pages/5_db_test.py", title="db_test"),
         st.Page("src/pages/6_word.py", title="word"),
     ],
+    "Playground": [
+        st.Page("src/pages/playground.py", title="playground"),
+    ]
 }
 
-st.logo(sidebar_logo, icon_image=main_body_logo)
+# st.logo(sidebar_logo, icon_image=main_body_logo)
 pg = st.navigation(pages)
 pg.run()
